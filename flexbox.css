@@ -1,0 +1,44 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 1px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2;
+    background-color: aqua; }
+    .div2 { grid-area: 1 / 2 / 2 / 3;
+    background-color: blanchedalmond; }
+    .div3 { grid-area: 1 / 3 / 2 / 4;
+    background-color: blue; }
+    .div4 { grid-area: 1 / 4 / 2 / 5;
+    background-color: blueviolet; }
+    .div5 { grid-area: 1 / 5 / 2 / 6; 
+    background-color: brown;}
+    .div6 { grid-area: 1 / 6 / 2 / 7; 
+    background-color: gold;}
+    .div7 { grid-area: 1 / 7 / 2 / 8;
+    background-color: yellow; }
+    .div8 { grid-area: 1 / 8 / 2 / 9; 
+    background-color: chartreuse;}
+    .div9 { grid-area: 1 / 9 / 2 / 10;
+    background-color: tomato; }
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        align-items: normal;
+        align-content: normal;
+      }
+      
+      .flex-items:nth-child(1) {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+      }
